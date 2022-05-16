@@ -27,5 +27,24 @@ import src.daoFactory.DaoFactory
         String deletedBy,
 public class ProductDaoMySQL implements ProductDao {
 	private static final String 
-	INSERT = "INSERT INTO products (title, description, price, isActive, created, updated, deleted, createdBy, updatedBy, deletedBy)"
+	INSERT = "INSERT INTO products (title, description, price, isActive, created, updated, deleted, createdBy, updatedBy, deletedBy) VALUES (?, ?, ?,?, ?, ?,?, ?, ?,?, ?, ?)";
+	private static final String
+	ALL = "SELECT * FROM products";
+
+	private static final String 
+	FIND_BY_TITLE = "SELECT * FROM products WHERE title = ?";
+	
+	private static final String
+	FIND_BY_ID = "SELECT * FROM products WHERE id = ?";
+
+	private static final String
+	FIND_BY_DESCRIPTION = "SELECT * FROM products WHERE description = ?";
+	
+	
+	private static final String 
+	DELETE = "DELETE FROM products where id = ?";
+	
+	private static final String 
+	DELETE_ALL = "DELETE FROM products";
+	
 }
