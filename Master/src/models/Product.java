@@ -10,7 +10,7 @@ public class Product extends AuditedModel {
 
     Status status;
 
-    
+    boolean isAllowed;
     public Product() {}
     public Product(
         String title,
@@ -22,7 +22,8 @@ public class Product extends AuditedModel {
         Date deleted,
         String createdBy,
         String updatedBy,
-        String deletedBy
+        String deletedBy,
+        boolean isAllowed
         ) {
         this.title = title;
         this.description  = description; 
@@ -34,7 +35,7 @@ public class Product extends AuditedModel {
         this.createdBy = createdBy; 
         this.updatedBy = updatedBy;
         this.deletedBy = deletedBy;
-
+        this.isAllowed = isAllowed;
     }
 
 
@@ -74,8 +75,21 @@ public class Product extends AuditedModel {
         this.id = id;
     }
 
-    public long getId() {
 
+    public long getId() {
         return id;
     }
+    public boolean getIsAllowed() {
+        return isAllowed;
+    }
+
+    public void setIsAllowed(boolean isAllowed) {
+        this.isAllowed = isAllowed;
+    }
+
+
+
+
+
+
 }

@@ -9,7 +9,7 @@ import java.util.List;
 import dao.interfaces.ProductDao;
 import models.Product;
 import src.DaoFactory.daoFactory;
-import src.dao.interfaces.ProductDao;
+import dao.interfaces.ProductDao;
 
 
 /*
