@@ -1,10 +1,10 @@
-package src.dao.interfaces;
+package dao.interfaces;
 
 import java.sql.SQLException; 
 
 import java.util.List;
 import java.util.Date;
-import src.models.Product;
+import models.Product;
 
 
 
@@ -16,7 +16,7 @@ public interface ProductDao {
 	Product findByTitle(String title) throws SQLException;
 	Product findById(Long id) throws SQLException;
 	Product findByDescription(String description) throws SQLException;
-	List<Product> findByDate(Date createdBy) throws SQLException;
+	List<Product> findByDate(Date created) throws SQLException;
 	List<Product> findByIsActive(boolean isActive) throws SQLException;
 	
 }

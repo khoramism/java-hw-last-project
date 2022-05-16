@@ -1,1 +1,5 @@
-package src.models;
+package models;
+
+public class Sader extends AuditedModel {
+
+}

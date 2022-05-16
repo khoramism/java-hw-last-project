@@ -1,6 +1,7 @@
-package src.models;
-import java.util.UUID;
+package models;
 import java.util.Date;
+import src.models.Status;
+
 public class Product extends AuditedModel {
     Long id ;
     String title;
@@ -11,7 +12,7 @@ public class Product extends AuditedModel {
 
     
     public Product() {}
-    public Product(Long id, 
+    public Product(
         String title,
         String description ,
         Integer price,
@@ -23,7 +24,6 @@ public class Product extends AuditedModel {
         String updatedBy,
         String deletedBy
         ) {
-        this.id = id;
         this.title = title;
         this.description  = description; 
         this.price = price; 
@@ -74,7 +74,8 @@ public class Product extends AuditedModel {
         this.id = id;
     }
 
-    public String getId() {
-        return id.toString();
+    public long getId() {
+
+        return id;
     }
 }
