@@ -1,4 +1,4 @@
-package src.dao.concrete 
+package src.dao.concrete;
 
 import java.sql.Connection;
 
@@ -9,12 +9,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Locals
-import models.Product
-import src.dao.interfaces.ProductDao
-import src.daoFactory.DaoFactory
+import src.models.Product;
+import src.DaoFactory.daoFactory;
+import src.dao.interfaces.ProductDao;
 
 
-
+/*
         String title,
         String description ,
         Integer price,
@@ -25,6 +25,8 @@ import src.daoFactory.DaoFactory
         String createdBy,
         String updatedBy,
         String deletedBy,
+*/
+
 public class ProductDaoMySQL implements ProductDao {
 	private static final String 
 	INSERT = "INSERT INTO products (title, description, price, isActive, created, updated, deleted, createdBy, updatedBy, deletedBy) VALUES (?, ?, ?,?, ?, ?,?, ?, ?,?, ?, ?)";
@@ -47,4 +49,38 @@ public class ProductDaoMySQL implements ProductDao {
 	private static final String 
 	DELETE_ALL = "DELETE FROM products";
 	
+	
+	public Product insert(Product product) throws SQLException {
+		Connection c = daoFactory.getDatabase().openConnection();
+		
+		PreparedStatement pstmt = c.prepareStatement(INSERT, PreparedStatement.RETURN_GENERATED_KEYS);
+
+		pstmt.setString(1, 	product.getTitle());
+		pstmt.setString(2, product.getDescription());
+
+		pstmt.setString(1, 	product.getPrice());
+		pstmt.setString(2, product.getIsActive());
+		
+		pstmt.setString(1, 	product.getTitle());
+		pstmt.setString(2, product.getDescription());
+		
+		pstmt.setString(1, 	product.getTitle());
+		pstmt.setString(2, product.getDescription());
+
+
+
+
+		pstmt.executeUpdate();
+
+		ResultSet rset = pstmt.getGeneratedKeys();
+
+		rset.next();
+		Long idGenerated = rset.getLong(1);
+		user.setId(idGenerated);
+
+		pstmt.close();
+		c.close();
+		
+		return user;
+	}
 }

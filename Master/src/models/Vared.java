@@ -1,7 +1,7 @@
-package src.models.Vared;
+package src.models;
 
 
-public class Sader extends AuditedModel  {
+public class Vared extends AuditedModel  {
 	Product product;
 	
 } 

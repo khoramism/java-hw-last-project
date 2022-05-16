@@ -1,10 +1,10 @@
-package src.dao;
+package src.dao.interfaces;
 
 import java.sql.SQLException; 
 
 import java.util.List;
-
-import models.Product
+import java.util.Date;
+import src.models.Product;
 
 
 
@@ -13,7 +13,7 @@ public interface ProductDao {
 	List<Product> all() throws SQLException;
 	int deleteall() throws SQLException;
 	int delete (Product product) throws SQLException;
-	Product findByTitle(String title) throw SQLException;
+	Product findByTitle(String title) throws SQLException;
 	Product findById(Long id) throws SQLException;
 	Product findByDescription(String description) throws SQLException;
 	List<Product> findByDate(Date createdBy) throws SQLException;
