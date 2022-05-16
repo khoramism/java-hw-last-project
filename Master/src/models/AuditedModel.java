@@ -17,4 +17,5 @@ public class AuditedModel  {
         return deleted != null;
     }
 
+    // TODO: Add set and get for these objects 
 }

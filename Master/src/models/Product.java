@@ -2,12 +2,41 @@ package models;
 import java.util.UUID;
 
 public class Product extends AuditedModel {
-    UUID uuid = UUID.randomUUID();
+    Long id ;
     String title;
     String description;
     Integer price;
 
     Status status;
+
+    
+    public Product() {}
+    public Product(Long id, 
+        String title,
+        String description ,
+        Integer price,
+        Boolean isActive,
+        Date created,
+        Date updated,
+        Date deleted,
+        String createdBy,
+        String updatedBy,
+        String deletedBy,
+        ) 
+    {
+        this.id = id
+        this.title = title;
+        this.description  = description; 
+        this.price = price; 
+        this.isActive = isActive; 
+        this.created = created; 
+        this.updated = updated; 
+        this.deleted = deleted; 
+        this.createdBy = createdBy; 
+        this.updatedBy = updatedBy;
+        this.deletedBy = deletedBy;
+
+    }
 
 
     public void setStatus(Status status) {
@@ -42,11 +71,11 @@ public class Product extends AuditedModel {
     public void setTitle(String title) {
         this.title = title;
     }
-    public void setUuid(UUID uuid) {
-        this.uuid = uuid;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getUuid() {
-        return uuid.toString();
+    public String getId() {
+        return id.toString();
     }
 }
