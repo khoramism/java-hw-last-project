@@ -2,12 +2,17 @@ package models;
 import org.jetbrains.annotations.NotNull;
 
 import java.lang.String;
-class EmailDetails {
+import java.sql.SQLException;
 
-    private String subject;
-}public class User {
+// import dao.interfaces.UserDao;
+import DaoFactory.daoFactory;
+
+
+public class User {
     String firstName;
     String lastName;
     String username;
+    String emailAddress;
+
 
 }

@@ -6,9 +6,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Locals
+import DaoFactory.daoFactory;
 import dao.interfaces.ProductDao;
 import models.Product;
-import src.DaoFactory.daoFactory;
+import DaoFactory.daoFactory;
 import dao.interfaces.ProductDao;
 
 
@@ -261,7 +262,8 @@ public class ProductDaoMySQL implements ProductDao {
 				,rset.getDate("deleted")
 				,rset.getString("createdBy")
 				,rset.getString("updatedBy")
-				,rset.getString("deletedBy"));
+				,rset.getString("deletedBy")
+				,rset.getBoolean("isAllowed"));
 
 		product.setId(rset.getLong("id"));
 

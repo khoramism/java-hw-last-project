@@ -1,6 +1,13 @@
 package models;
+import java.sql.SQLException;
 import java.util.Date;
+import java.util.List;
+
 import src.models.Status;
+
+import dao.interfaces.ProductDao;
+
+import DaoFactory.daoFactory;
 
 public class Product extends AuditedModel {
     Long id ;
@@ -37,6 +44,7 @@ public class Product extends AuditedModel {
         this.deletedBy = deletedBy;
         this.isAllowed = isAllowed;
     }
+
 
 
     public void setStatus(Status status) {
@@ -87,9 +95,38 @@ public class Product extends AuditedModel {
         this.isAllowed = isAllowed;
     }
 
+    public String[] toArray() {
+        return new String[] {this.id.toString(), this.title, this.price.toString()};
+    }
+
+    @Override
+    public String toString() {
+        return " id: " + id +
+                " title: " + title +
+                " Price : " + price ;
+    }
+    // Methods to Work with Database
 
 
+    /**
+     * Method to save the current product in the database.
+     */
+    public void save() throws SQLException {
+        ProductDao().insert(this);
+    }
+    /**
+     * Method to save the current user in the database
+     */
+    public void delete() throws SQLException{
+        ProductDao().delete(this);
+    }
 
 
-
+    /**
+     * Method to find all users from the database
+     * @return users all users from the database
+     */
+    public static List<Product> all() throws SQLException {
+        return ProductDao().all();
+    }
 }
