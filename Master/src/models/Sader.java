@@ -1,7 +1,7 @@
-package models;
+package src.models;
 import models.Product;
-
-public class Sader extends AuditedModel {
+import models.User;
+public class Sader extends models.AuditedModel {
     public Product product;
-
+    public User user;
 }

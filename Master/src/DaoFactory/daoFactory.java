@@ -1,10 +1,9 @@
-package DaoFactory;
+package src.DaoFactory;
 
 import java.sql.Connection;
 
-import dao.interfaces.ProductDao;
+import src.dao.interfaces.ProductDao;
 
-import dao.interfaces.ProductDao;
 
 public abstract class daoFactory {
 

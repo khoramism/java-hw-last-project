@@ -1,4 +1,4 @@
-package dao.concrete;
+package src.dao.concrete;
 
 import java.sql.*;
 
@@ -6,11 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 // Locals
-import DaoFactory.daoFactory;
-import dao.interfaces.ProductDao;
-import models.Product;
-import DaoFactory.daoFactory;
-import dao.interfaces.ProductDao;
+import src.DaoFactory.daoFactory;
+import src.dao.interfaces.ProductDao;
+import src.models.Product;
 
 
 /*
@@ -92,7 +90,6 @@ public class ProductDaoMySQL implements ProductDao {
 	/**
 	 * Method to retrieve all products from the database
 	 * @return products all products in the database
-	 * @throws SQLException
 	 */
 	public List<Product> all() throws SQLException {
 		ArrayList<Product> products = new ArrayList<Product>();

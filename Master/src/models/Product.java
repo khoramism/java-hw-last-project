@@ -1,4 +1,4 @@
-package models;
+package src.models;
 import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
@@ -9,7 +9,7 @@ import dao.interfaces.ProductDao;
 
 import DaoFactory.daoFactory;
 
-public class Product extends AuditedModel {
+public class Product extends models.AuditedModel {
     Long id ;
     String title;
     String description;

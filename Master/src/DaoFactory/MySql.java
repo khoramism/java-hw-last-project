@@ -9,13 +9,13 @@ import src.dao.interfaces.ProductDao;
 
 
 public class MySql extends daoFactory {
-    private static String url = "jdbc:mysql://127.0.0.1:3306/";
-	private static String database = "minoofam";
-	private static String driver = "com.mysql.jdbc.Driver";
-	private static String user = "root";
-	private static String password = "mysql";
+    private static String url = "jdbc:postgresql://localhost:5432/";
+	private static String database = "postgres";
+	private static String driver = "src.postgresql.jdbc.Driver";
+	private static String user = "postgres";
+	private static String password = "postgres";
 
-	public Connection openConnection() {   
+	public Connection openConnection() {
 		try {
             // v9 ---> Class.forName(driver).newInstance();
             
@@ -33,5 +33,7 @@ public class MySql extends daoFactory {
     @Override
 	public ProductDao getProductDao() {
 		return new ProductDaoMySQL();
+	}
+	 public static void main(String[] args) {
 	}
 }
