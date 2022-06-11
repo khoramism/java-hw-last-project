@@ -1,4 +1,4 @@
-package src.exception;
+package com.example.kjj.exception;
 
 public class EmailAlreadyExistException extends Exception {
     public EmailAlreadyExistException(){

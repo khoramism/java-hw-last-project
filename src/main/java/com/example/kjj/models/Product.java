@@ -3,30 +3,34 @@ import java.sql.SQLException;
 import java.util.Date;
 import java.util.List;
 
-import src.models.Status;
+import lombok.Getter;
+import lombok.Setter;
 
-import com.example.kjj.dao.interfaces.ProductDao;
+import com.example.kjj.dao.concrete.ProductDaoMySQL;
 
 import com.example.kjj.DaoFactory.daoFactory;
 
-public class Product extends models.AuditedModel {
-    Long id ;
-    String title;
-    String description;
-    Integer price;
+import javax.persistence.*;
+import javax.validation.constraints.Size;
 
-    Status status;
 
-    boolean isAllowed;
+public class Product extends AuditedModel {
+    private Long id;
+
+
+    private String title;
+
+    private String description;
+
+    private Integer price;
+    private Status status;
+    private boolean isAllowed;
     public Product() {}
     public Product(
         String title,
         String description ,
         Integer price,
         Boolean isActive,
-        Date created,
-        Date updated,
-        Date deleted,
         String createdBy,
         String updatedBy,
         String deletedBy,
@@ -35,10 +39,7 @@ public class Product extends models.AuditedModel {
         this.title = title;
         this.description  = description; 
         this.price = price; 
-        this.isActive = isActive; 
-        this.created = created; 
-        this.updated = updated; 
-        this.deleted = deleted; 
+        this.isActive = isActive;
         this.createdBy = createdBy; 
         this.updatedBy = updatedBy;
         this.deletedBy = deletedBy;
@@ -80,7 +81,7 @@ public class Product extends models.AuditedModel {
         this.title = title;
     }
     public void setId(Long id) {
-        this.id = id;
+        this.id =id;
     }
 
 
@@ -112,13 +113,13 @@ public class Product extends models.AuditedModel {
      * Method to save the current product in the database.
      */
     public void save() throws SQLException {
-        ProductDao().insert(this);
+        new ProductDaoMySQL().insert(this);
     }
     /**
      * Method to save the current user in the database
      */
     public void delete() throws SQLException{
-        ProductDao().delete(this);
+        new ProductDaoMySQL().delete(this);
     }
 
 
@@ -127,6 +128,6 @@ public class Product extends models.AuditedModel {
      * @return users all users from the database
      */
     public static List<Product> all() throws SQLException {
-        return ProductDao().all();
+        return new ProductDaoMySQL().all();
     }
 }

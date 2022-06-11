@@ -1,4 +1,4 @@
-package models;
+package com.example.kjj.models;
 import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.format.DateTimeFormatter;

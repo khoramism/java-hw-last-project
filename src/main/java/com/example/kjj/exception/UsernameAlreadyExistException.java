@@ -1,4 +1,4 @@
-package src.exception;
+package com.example.kjj.exception;
 
 public class UsernameAlreadyExistException extends Exception{
     public UsernameAlreadyExistException(){
