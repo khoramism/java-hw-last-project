@@ -56,7 +56,10 @@ public class User {
         @OneToMany
         private Set<Vared> vareds = new HashSet<>();
 
-        // private boolean isAllowedToTrade;
+
+        @Getter @Setter
+        @Column(name="is_allowed_to_trade", nullable = false)
+        private boolean isAllowedToTrade;
 
         /// String IdCardNum;
         // This needs a lot of thought

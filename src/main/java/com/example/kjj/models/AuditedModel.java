@@ -10,7 +10,7 @@ import java.util.Date;
 public class AuditedModel  {
     @Getter
     @Setter
-    @Column
+    @Column(name="is_active")
     public Boolean isActive;
 
     @Getter @Setter
@@ -26,20 +26,7 @@ public class AuditedModel  {
     public Date deleted;
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 
-    @Getter @Setter
-    @Column
-    public String createdBy;
 
-    @Getter @Setter
-    @Column
-    public String updatedBy;
-
-    @Getter @Setter
-    @Column
-    public String deletedBy;
-
-    @Getter @Setter
-    @Column
     public SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 

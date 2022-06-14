@@ -35,7 +35,7 @@ public class Product extends AuditedModel {
     private Status status;
 
     @Getter @Setter
-    @Column
+    @Column(name="is_allowed")
     private Boolean isAllowed;
     public Product() {}
     public Product(
@@ -43,18 +43,12 @@ public class Product extends AuditedModel {
         String description ,
         Integer price,
         Boolean isActive,
-        String createdBy,
-        String updatedBy,
-        String deletedBy,
         boolean isAllowed
         ) {
         this.title = title;
         this.description  = description; 
         this.price = price; 
         this.isActive = isActive;
-        this.createdBy = createdBy; 
-        this.updatedBy = updatedBy;
-        this.deletedBy = deletedBy;
         this.isAllowed = isAllowed;
     }
 

@@ -9,39 +9,22 @@ import java.util.Set;
 
 @Entity
 @Table(name="Sader")
-public class Sader extends AuditedModel{
-    @Getter
-    @Setter
+public class Sader extends ImpExp {
+
     @Id
-    @GeneratedValue(strategy =  GenerationType.SEQUENCE)
-    public Long id;
-
-    @Getter
-    @Setter
-    @OneToMany
-    Set<Product> products = new HashSet<>();
-
-    @Getter
-    @Setter
-    @ManyToOne
-    User user;
+    @Column(name = "id", nullable = false)
+    private Long id;
 
     public Sader(){}
 
     public Sader(
-            Set<Product> products,
+            Product product,
             User user,
-            Boolean isActive,
-            String createdBy,
-            String updatedBy,
-            String deletedBy
+            Boolean isActive
     ) {
         this.user = user;
-        this.products = products;
+        this.product = product;
         this.isActive = isActive;
-        this.createdBy = createdBy;
-        this.updatedBy = updatedBy;
-        this.deletedBy = deletedBy;
     }
 
 }
