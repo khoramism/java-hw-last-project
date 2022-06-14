@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Accordion?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kjj.controller.MainController">
+<AnchorPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kjj.controller.MainController">
    <children>
       <AnchorPane prefHeight="121.0" prefWidth="755.0" style="-fx-background-color: #2f3650;" AnchorPane.bottomAnchor="426.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -25,48 +24,14 @@
             </Label>
          </children>
       </AnchorPane>
-      <Label layoutX="378.0" layoutY="222.0" text="کدام قسمت؟" textFill="#71788a" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="220.0" />
-      <Button layoutX="316.0" layoutY="218.0" mnemonicParsing="false" onAction="#varedat" style="-fx-background-color: #23c333;" text="واردات" AnchorPane.leftAnchor="310.0" AnchorPane.rightAnchor="390.0" AnchorPane.topAnchor="220.0" />
-      <Button layoutX="181.0" layoutY="221.0" mnemonicParsing="false" onAction="#saderat" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #23c333;" text="صادرات" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="221.0" />
-      <Button layoutX="96.0" layoutY="220.0" mnemonicParsing="false" onAction="#us" style="-fx-background-color: #23c333;" text="درباره ی ما" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="610.0" AnchorPane.topAnchor="220.0" />
-      <Button layoutX="181.0" layoutY="85.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: #23c333;" text="جستجو" />
+      <Button layoutX="554.0" layoutY="373.0" mnemonicParsing="false" onAction="#varedat" prefHeight="24.0" prefWidth="103.0" style="-fx-background-color: #23c333;" text="واردات" AnchorPane.leftAnchor="554.0" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="373.0" />
+      <Button layoutX="162.0" layoutY="372.0" mnemonicParsing="false" onAction="#saderat" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #23c333;" text="صادرات" AnchorPane.leftAnchor="162.0" AnchorPane.rightAnchor="490.0" AnchorPane.topAnchor="372.0" />
+      <Button layoutX="7.0" layoutY="455.0" mnemonicParsing="false" onAction="#us" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: #23c333;" text="درباره ی ما" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="645.0" AnchorPane.topAnchor="455.0" />
+      <Button layoutX="213.0" layoutY="85.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: #23c333;" text="جستجو" />
       <TextField alignment="CENTER" layoutX="21.0" layoutY="85.0" promptText="جستجو" style="-fx-background-color: #2f3650;" />
-      <Accordion layoutX="574.0" layoutY="71.0" prefHeight="75.0" prefWidth="214.0" style="-fx-background-color: #23c333;">
-        <panes>
-          <TitledPane animated="false" prefHeight="176.0" prefWidth="214.0" style="-fx-background-color: #23c333;" text="لباس">
-               <content>
-                  <AnchorPane prefHeight="51.0" prefWidth="231.0">
-                     <children>
-                        <Button layoutY="-2.0" mnemonicParsing="false" onAction="#saderatL" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: #13ab20;" text="صادرات" />
-                        <Button layoutY="23.0" mnemonicParsing="false" onAction="#varedatL" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: #13ab20;" text="واردات" />
-                     </children>
-                  </AnchorPane>
-               </content>
-          </TitledPane>
-          <TitledPane animated="false" prefHeight="21.0" prefWidth="202.0" style="-fx-background-color: #23c333;" text="دیجیتال">
-               <content>
-                  <AnchorPane prefHeight="38.0" prefWidth="231.0">
-                     <children>
-                        <Button layoutX="1.0" layoutY="-2.0" mnemonicParsing="false" onAction="#saderatD" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: #13ab20;" text="صادرات" />
-                        <Button layoutX="1.0" layoutY="23.0" mnemonicParsing="false" onAction="#varedatD" prefHeight="25.0" prefWidth="210.0" style="-fx-background-color: #13ab20;" text="واردات" />
-                     </children>
-                  </AnchorPane>
-               </content>
-          </TitledPane>
-          <TitledPane animated="false" prefHeight="0.0" prefWidth="202.0" style="-fx-background-color: #23c333;" text="لوازم ارایشی">
-               <content>
-                  <AnchorPane prefHeight="58.0" prefWidth="232.0">
-                     <children>
-                        <Button layoutY="2.0" mnemonicParsing="false" onAction="#saderatT" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: #13ab20;" text="صادرات" />
-                        <Button layoutX="-2.0" layoutY="31.0" mnemonicParsing="false" onAction="#varedatT" prefHeight="25.0" prefWidth="211.0" style="-fx-background-color: #13ab20;" text="واردات" />
-                     </children>
-                  </AnchorPane>
-               </content>
-          </TitledPane>
-        </panes>
-      </Accordion>
       <Circle fx:id="red" fill="#fe4571" layoutX="51.0" layoutY="49.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.topAnchor="20.0" />
       <Circle fx:id="yellow" fill="#fec864" layoutX="71.0" layoutY="49.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.topAnchor="20.0" />
       <Circle fx:id="green" fill="#42ce9d" layoutX="91.0" layoutY="49.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.topAnchor="20.0" />
+      <TextArea layoutX="342.0" layoutY="97.0" prefHeight="30.0" prefWidth="227.0" />
    </children>
 </AnchorPane>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.chart.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kjj.controller.SingingController">
+<AnchorPane prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kjj.controller.SingingController">
    <children>
       <Label layoutX="627.0" layoutY="97.0" text="اسم" textFill="#71788a" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="117.0" />
       <Label layoutX="588.0" layoutY="140.0" text="نام خانوادگی" textFill="#71788a" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="170.0" />
-      <Label layoutX="624.0" layoutY="185.0" prefHeight="0.0" prefWidth="27.0" text="ایمیل" textFill="#71788a" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="223.0" />
+      <Label layoutX="624.0" layoutY="185.0" prefHeight="0.0" prefWidth="50.0" text="ایمیل" textFill="#71788a" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="223.0" />
       <Label layoutX="596.0" layoutY="230.0" text="رمز عبور" textFill="#71788a" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="276.0" />
       <TextField fx:id="name" alignment="CENTER" layoutX="353.0" layoutY="113.0" promptText="name" style="-fx-background-color: #fff;" AnchorPane.rightAnchor="244.0" AnchorPane.topAnchor="117.0" />
       <TextField fx:id="familyname" alignment="CENTER" layoutX="353.0" layoutY="158.0" promptText="family " style="-fx-background-color: #fff;" AnchorPane.rightAnchor="244.0" AnchorPane.topAnchor="170.0" />
@@ -39,7 +40,20 @@
 <!--            <Image url="@../../../../../Downloads/download.png" />-->
          </image>
       </ImageView>
-      <Label layoutX="605.0" layoutY="350.0" text="random number" textFill="#71788a" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="333.0" />
+      <Label layoutX="605.0" layoutY="350.0" textFill="#71788a" AnchorPane.rightAnchor="98.0" AnchorPane.topAnchor="333.0" />
       <TextField fx:id="numberInBox" alignment="CENTER" layoutX="331.0" layoutY="329.0" promptText="number in box" style="-fx-background-color: #fff;" AnchorPane.topAnchor="329.0" />
+      <Label text="Label" />
+      <Label text="Label" />
+      <Label text="Label" />
+      <Label text="Label" />
+      <ScatterChart>
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </ScatterChart>
+      <TextArea prefHeight="200.0" prefWidth="200.0" />
    </children>
 </AnchorPane>

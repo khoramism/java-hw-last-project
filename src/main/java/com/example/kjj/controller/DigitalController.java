@@ -4,6 +4,7 @@
  */
 package com.example.kjj.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 
 import java.net.URL;
@@ -22,6 +23,11 @@ public class DigitalController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-    
+    }
+
+    public void saderatT(ActionEvent actionEvent) {
+    }
+
+    public void varedatT(ActionEvent actionEvent) {
+    }
 }

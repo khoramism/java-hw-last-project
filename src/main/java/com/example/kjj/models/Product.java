@@ -1,12 +1,9 @@
 package com.example.kjj.models;
 
-import com.example.kjj.dao.concrete.ProductDaoMySQL;
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.sql.SQLException;
-import java.util.List;
 
 @Entity
 @Table(name="Product")
@@ -38,12 +35,13 @@ public class Product extends AuditedModel {
     @Column(name="is_allowed")
     private Boolean isAllowed;
     public Product() {}
+
     public Product(
         String title,
         String description ,
         Integer price,
         Boolean isActive,
-        boolean isAllowed
+        Boolean isAllowed
         ) {
         this.title = title;
         this.description  = description; 

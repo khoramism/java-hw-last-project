@@ -10,7 +10,7 @@ import java.util.Set;
 
 @Entity
 @Table(name="Vared")
-public class Vared extends AuditedModel {
+public class Vared extends ImpExp {
 
 	@Getter
 	@Setter
@@ -18,20 +18,10 @@ public class Vared extends AuditedModel {
 	@GeneratedValue(strategy =  GenerationType.SEQUENCE)
 	public Long id;
 
-	@Getter
-	@Setter
-	@OneToMany
-	Set<Product> products = new HashSet<>();
-
-	@Getter
-	@Setter
-	@ManyToOne
-	User user;
-
 	public Vared(){}
 
 	public Vared(
-			Set<Product> products,
+			Product product,
 			User user,
 			Boolean isActive,
 			String createdBy,
@@ -39,10 +29,7 @@ public class Vared extends AuditedModel {
 			String deletedBy
 	) {
 		this.user = user;
-		this.products = products;
+		this.product = product;
 		this.isActive = isActive;
-		this.createdBy = createdBy;
-		this.updatedBy = updatedBy;
-		this.deletedBy = deletedBy;
 	}
 }

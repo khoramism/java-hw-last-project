@@ -1,17 +1,10 @@
 package com.example.kjj.dao.concrete;
-
-import com.example.kjj.DaoFactory.daoFactory;
-import com.example.kjj.dao.interfaces.ProductDao;
 import com.example.kjj.models.Product;
-import com.example.kjj.models.Sader;
-import com.example.kjj.models.User;
 import com.example.kjj.util.HibernateUtil;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 

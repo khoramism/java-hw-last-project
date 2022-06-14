@@ -10,7 +10,7 @@ import java.util.Set;
 @Entity
 @Table(name="Sader")
 public class Sader extends ImpExp {
-
+    @Setter @Getter
     @Id
     @Column(name = "id", nullable = false)
     private Long id;
