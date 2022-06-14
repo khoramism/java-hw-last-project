@@ -1,92 +1,62 @@
 package com.example.kjj.models;
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.Column;
 import java.text.SimpleDateFormat;
-import java.time.Instant;
 import java.time.format.DateTimeFormatter;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.*;
+
 public class AuditedModel  {
+    @Getter
+    @Setter
+    @Column
     public Boolean isActive;
 
+    @Getter @Setter
+    @Column
     public Date created;
+
+    @Getter @Setter
+    @Column
     public Date updated;
+
+    @Getter @Setter
+    @Column
     public Date deleted;
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+
+    @Getter @Setter
+    @Column
     public String createdBy;
+
+    @Getter @Setter
+    @Column
     public String updatedBy;
+
+    @Getter @Setter
+    @Column
     public String deletedBy;
+
+    @Getter @Setter
+    @Column
     public SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-    public boolean getIsActive() { 
-        return isActive; 
-    }
-    public void setIsActive(boolean isActive) {
-            this.isActive = isActive;
-    }
 
 
     public String getMSQCreated() {
         return sdf.format(created);
     }
     // ' YYYY-MM-DD hh:mm:ss ' 
-    public void setCreated(Date created) {
-        this.created = created;
-    }
-
-    public Date getCreated() {
-        return created;
-    }
 
     public String getMSQDeleted() {
         return sdf.format(deleted);
     }
     // ' YYYY-MM-DD hh:mm:ss '
 
-    public Date getDeleted() {
-        return deleted;
-    }
-
-    public void setDeleted(Date deleted) {
-
-        this.deleted = deleted;
-    }
-
-    public Date getUpdated() {
-        return updated;
-    }
-
     public String getMSQUpdated() {
         return sdf.format(updated);
     }
     // ' YYYY-MM-DD hh:mm:ss '
-    public void setUpdated(Date updated) {
-
-        this.updated = updated;
-    }
-
-    public String getCreatedBy() {
-        return createdBy;
-    }
-    public void setCreatedBy(String createdBy) {
-        this.createdBy = createdBy;
-    }
-
-
-    public String getUpdatedBy() {
-        return updatedBy;
-    }
-    public void setUpdatedBy(String updatedBy) {
-        this.updatedBy = updatedBy;
-    }
-
-    public String getDeletedBy() {
-        return deletedBy;
-    }
-    public void setDeletedBy(String deletedByBy) {
-        this.deletedBy = deletedByBy;
-    }
-
-
-
 
     public boolean isDeleted() {
         return deleted != null;

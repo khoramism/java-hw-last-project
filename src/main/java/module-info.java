@@ -1,16 +1,21 @@
 module com.example.kjj {
     requires javafx.controls;
     requires javafx.fxml;
-    requires mysql.connector.java;
     requires java.sql;
+    requires spring.security.crypto;
+    requires java.persistence;
     requires lombok;
     requires java.validation;
-    requires java.persistence;
     requires org.hibernate.orm.core;
-    requires spring.data.jpa;
-    requires spring.security.crypto;
-    requires java.transaction;
-
+    requires java.naming;
+    requires mysql.connector.java;
     opens com.example.kjj to javafx.fxml;
     exports com.example.kjj;
+
+    opens com.example.kjj.controller to javafx.fxml;
+    exports com.example.kjj.controller;
+
+    opens com.example.kjj.models to org.hibernate.orm.core;
+    exports com.example.kjj.models;
+
 }

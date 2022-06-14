@@ -1,8 +1,8 @@
 package com.example.kjj.DaoFactory;
 
-import java.sql.Connection;
+import com.example.kjj.dao.interfaces.ProductDao;
 
-import src.dao.interfaces.ProductDao;
+import java.sql.Connection;
 
 
 public abstract class daoFactory {

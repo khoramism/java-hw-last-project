@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="com.example.kjj.controller.UsController">
+   <children>
+      <Label fx:id="title" layoutX="293.0" layoutY="36.0" text="us we" textFill="RED">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="name" layoutX="34.0" layoutY="99.0" text="name" textFill="WHITE" />
+      <Label fx:id="email" layoutX="232.0" layoutY="99.0" text="email" textFill="WHITE" />
+      <Label fx:id="phone" layoutX="392.0" layoutY="99.0" text="phone" textFill="WHITE" />
+      <Label fx:id="job" layoutX="540.0" layoutY="99.0" text="job" textFill="#fffefe" />
+      <Label fx:id="dara" layoutX="35.0" layoutY="145.0" text="dara sadri" textFill="WHITE" />
+      <Label fx:id="milad" layoutX="35.0" layoutY="183.0" text="milad taghizadeh" textFill="WHITE" />
+      <Label fx:id="alireza" layoutX="35.0" layoutY="223.0" text="alireza khoram" textFill="WHITE" />
+      <Label fx:id="ali" layoutX="35.0" layoutY="259.0" text="ali ajvand" textFill="WHITE" />
+      <Label fx:id="daraJ" layoutX="514.0" layoutY="145.0" text="Import panel" textFill="WHITE" />
+      <Label fx:id="miladJ" layoutX="515.0" layoutY="183.0" text="Export panel" textFill="WHITE" />
+      <Label fx:id="alirezaJ" layoutX="521.0" layoutY="223.0" text="data base " textFill="WHITE" />
+      <Label fx:id="aliJ" layoutX="511.0" layoutY="259.0" text="product panel" textFill="WHITE" />
+      <Label fx:id="alirezaE" layoutX="170.0" layoutY="223.0" text="www.khoramism@gmail.com" textFill="WHITE" />
+      <Label fx:id="aliE" layoutX="172.0" layoutY="259.0" text="www.aliajvand.1@gmail.com" textFill="WHITE" />
+      <Label fx:id="miladE" layoutX="165.0" layoutY="183.0" text="miladtaghizadeh1382@outlook.com" textFill="WHITE" />
+      <Label fx:id="daraE" layoutX="182.0" layoutY="145.0" text="darasadri82@gmail.com" textFill="WHITE" />
+      <Label fx:id="aliP" layoutX="390.0" layoutY="259.0" text="09195253462" textFill="WHITE" />
+      <Label fx:id="alirezaP" layoutX="390.0" layoutY="223.0" text="09102726356" textFill="WHITE" />
+      <Label fx:id="miladP" layoutX="390.0" layoutY="183.0" text="09391836361" textFill="WHITE" />
+      <Label fx:id="daraP" layoutX="390.0" layoutY="145.0" text="09120314706" textFill="WHITE" />
+      <Button layoutX="285.0" layoutY="315.0" mnemonicParsing="false" onAction="#mainPage" text="main page" />
+   </children>
+</AnchorPane>

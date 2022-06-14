@@ -1,10 +1,10 @@
 package com.example.kjj.dao.interfaces;
 
-import java.sql.SQLException; 
-
-import java.util.List;
-import java.util.Date;
 import com.example.kjj.models.Product;
+
+import java.sql.SQLException;
+import java.util.Date;
+import java.util.List;
 
 
 

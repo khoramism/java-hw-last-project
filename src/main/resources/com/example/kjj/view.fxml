@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="493.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kjj.controller.ViewController">
+    <children>
+        <TabPane layoutX="-6.0" prefHeight="493.0" prefWidth="746.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="صفحه اصلی">
+                    <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <AnchorPane layoutX="6.0" layoutY="-2.0" prefHeight="465.0" prefWidth="740.0" style="-fx-background-color: #00003e;" />
+                            </children>
+                        </AnchorPane>
+                    </content></Tab>
+                <Tab text="کالا های مجاز">
+                    <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00003e;" />
+                    </content></Tab>
+                <Tab text="بررسی هویت و مجوزها">
+                    <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <AnchorPane fx:id="usernameFld" layoutX="1.0" prefHeight="468.0" prefWidth="746.0" style="-fx-background-color: #00003e;">
+                           <children>
+                              <Text fill="WHITE" layoutX="309.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="بارگذاری مدارک هویتی">
+                                 <font>
+                                    <Font name="System Bold Italic" size="20.0" />
+                                 </font>
+                              </Text>
+                              <Label fx:id="UsernameLbl" layoutX="619.0" layoutY="78.0" text="نام و نام خانوادگی:" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="birthLbl" layoutX="626.0" layoutY="162.0" text="سال تولد:" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="IdLbl" layoutX="633.0" layoutY="243.0" text="کدملی:" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="fatherNameLbl" layoutX="289.0" layoutY="243.0" text="نام پدر:" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sexLbl" layoutX="286.0" layoutY="78.0" text="جنسیت:" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="phoneNumLbl" layoutX="279.0" layoutY="162.0" text="شماره همراه:" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="username" layoutX="470.0" layoutY="76.0" promptText="نام و نام خانوادگی" />
+                              <TextField fx:id="ageFld" layoutX="470.0" layoutY="160.0" promptText="1401/1/1" />
+                              <TextField fx:id="IdFld" layoutX="470.0" layoutY="240.0" promptText="0000000000" />
+                              <PasswordField fx:id="fathernameFld" layoutX="129.0" layoutY="240.0" promptText="نام پدر" />
+                              <TextField fx:id="sexFld" layoutX="129.0" layoutY="76.0" promptText="مرد/زن" />
+                              <TextField fx:id="phonnumFld" layoutX="129.0" layoutY="159.0" promptText="09120000000" />
+                              <Label fx:id="IdBazarganiLbl" layoutX="427.0" layoutY="329.0" text="کارت بازرگانی:" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="IdBazarganiFld" layoutX="264.0" layoutY="327.0" promptText="کارت بازرگانی" />
+                              <Button fx:id="doneBtn" layoutX="354.0" layoutY="388.0" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="35.0" prefWidth="79.0" text="ثبت">
+                                 <font>
+                                    <Font name="System Bold Italic" size="16.0" />
+                                 </font>
+                              </Button>
+                           </children></AnchorPane>
+                            </children>
+                        </AnchorPane>
+                    </content></Tab>
+                <Tab text="راهنما">
+                    <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #00003e;">
+                            <children>
+                                <Label layoutX="436.0" layoutY="28.0" text="قوانین و مقررات صادرات" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold Italic" size="30.0" />
+                                    </font>
+                                </Label>
+                                <Text fill="WHITE" layoutX="391.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 – کاالهای قانونی و مجاز اجازه صادرات و واردات دارند">
+                           <font>
+                              <Font size="15.0" />
+                           </font></Text>
+                        <Text fill="WHITE" layoutX="506.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2– پرداخت حق گمرکی به ازای کالاها">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="496.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3– صادرات تا سقف مجاز 20 هزار کالا">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="498.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4_الزام افراد به داشتن مجوز صادرات">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="269.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5_ارائه اسناد و مدارک کالاهایی که مردم قصد صادرات یا واردات آنها را دارند">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                            </children>
+                        </AnchorPane>
+                    </content></Tab>
+            </tabs>
+        </TabPane>
+
+    </children>
+</AnchorPane>

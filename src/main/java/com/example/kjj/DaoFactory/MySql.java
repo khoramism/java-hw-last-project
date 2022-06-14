@@ -1,14 +1,16 @@
 package com.example.kjj.DaoFactory;
+import com.example.kjj.dao.concrete.ProductDaoMySQL;
+import com.example.kjj.dao.interfaces.ProductDao;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import src.dao.concrete.ProductDaoMySQL;
-import src.dao.interfaces.ProductDao;
 
 
 
-public class MySql extends src.DaoFactory.daoFactory {
+
+public class MySql {
     private static String url = "jdbc:postgresql://localhost:5432/";
 	private static String database = "minoofam";
 	private static String driver = "src.postgresql.jdbc.Driver";
@@ -30,10 +32,10 @@ public class MySql extends src.DaoFactory.daoFactory {
 		}
 		return null;
 	}
-    @Override
-	public ProductDao getProductDao() {
-		return new ProductDaoMySQL();
-	}
+//    @Override
+//	public ProductDao getProductDao() {
+//		return new ProductDaoMySQL();
+//	}
 	 public static void main(String[] args) {
 	}
 }
