@@ -4,6 +4,7 @@
  */
 package com.example.kjj.controller;
 
+import com.example.kjj.dao.concrete.VaredDaoMySQL;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -28,20 +29,7 @@ public class MainController implements Initializable {
 
     @FXML
     private Circle yellow;
-  @FXML
-    void idClothing(ActionEvent event) {
 
-    }
-
-    @FXML
-    void idCosmetic(ActionEvent event) {
-
-    }
-
-    @FXML
-    void idDigital(ActionEvent event) {
-
-    }
 
     @FXML
     void saderat(ActionEvent event) {
@@ -63,34 +51,7 @@ public class MainController implements Initializable {
 
     }
     
-    @FXML
-    void varedatD(ActionEvent event) {
 
-    }
-
-    @FXML
-    void varedatL(ActionEvent event) {
-
-    }
-
-    @FXML
-    void varedatT(ActionEvent event) {
-
-    }
-        @FXML
-    void saderatD(ActionEvent event) {
-
-    }
-
-    @FXML
-    void saderatL(ActionEvent event) {
-
-    }
-
-    @FXML
-    void saderatT(ActionEvent event) {
-
-    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO

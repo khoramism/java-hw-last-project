@@ -8,6 +8,7 @@ import javafx.scene.control.TextField;
 
 public class Login {
 
+    public TextField pass;
     @FXML
     private Button btnSabt;
 
@@ -18,14 +19,15 @@ public class Login {
     private Label txtLable2;
 
     @FXML
-    private TextField txtPassword;
+    private TextField password;
 
     @FXML
-    private TextField txtUsername;
+    private TextField username;
 
     @FXML
     void pressBtnSabt(ActionEvent event) {
-
+        System.out.println(password);
+        System.out.println(username);
     }
 
 }

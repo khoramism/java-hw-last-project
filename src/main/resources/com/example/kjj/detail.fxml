@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alireza.DetailController">
+   <children>
+      <Label layoutX="659.0" layoutY="94.0" text="ID" textFill="#71788a" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="95.0" />
+      <Label layoutX="651.0" layoutY="135.0" text="قیمت" textFill="#71788a" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="135.0" />
+      <Label layoutX="623.0" layoutY="172.0" text="وضعیت محصول" textFill="#71788a" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="175.0" />
+      <Label layoutX="543.0" layoutY="208.0" text="محصول قابلیت صادرات و وواردات دارد؟" textFill="#71788a" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="210.0" />
+      <Button layoutX="586.0" layoutY="386.0" mnemonicParsing="false" onAction="#saderat" style="-fx-background-color: #23c333;" text="صادرات" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="386.0" />
+      <Button layoutX="506.0" layoutY="386.0" mnemonicParsing="false" onAction="#varedat" style="-fx-background-color: #23c333;" text="واردات" AnchorPane.rightAnchor="215.0" AnchorPane.topAnchor="386.0" />
+      <Button layoutX="-2.0" layoutY="444.0" mnemonicParsing="false" onAction="#main" prefHeight="48.0" prefWidth="756.0" style="-fx-background-color: #23c333;" text="صفحه ی اصلی" />
+      <AnchorPane layoutY="-1.0" prefHeight="85.0" prefWidth="756.0" style="-fx-background-color: #2f3650;">
+         <children>
+            <Label fx:id="title" alignment="CENTER" layoutX="309.0" layoutY="19.0" prefHeight="48.0" prefWidth="138.0" text="title" textFill="#71788a" AnchorPane.rightAnchor="309.0" AnchorPane.topAnchor="19.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Circle fx:id="red" fill="#fe4571" layoutX="39.0" layoutY="43.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fx:id="yellow" fill="#fec864" layoutX="60.0" layoutY="43.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Circle fx:id="green" fill="#42ce9d" layoutX="81.0" layoutY="43.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="653.0" layoutY="268.0" text="توضیخات" textFill="#71788a" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="245.0" />
+      <Label fx:id="Explanation" alignment="TOP_RIGHT" layoutX="19.0" layoutY="277.0" prefHeight="101.0" prefWidth="558.0" style="-fx-background-color: #71788a;" text="توضیح" textAlignment="RIGHT" textFill="#020611" AnchorPane.topAnchor="245.0" />
+      <Label fx:id="Ability" layoutX="424.0" layoutY="208.0" text="دارد؟؟؟" textFill="#71788a" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="210.0" />
+      <Label fx:id="state" layoutX="423.0" layoutY="181.0" text="وضعیت" textFill="#71788a" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="175.0" />
+      <Label fx:id="price" layoutX="435.0" layoutY="135.0" text="قیمت" textFill="#71788a" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="135.0" />
+      <Label fx:id="ID" layoutX="444.0" layoutY="94.0" text="ID" textFill="#71788a" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="95.0" />
+      <Button layoutX="203.0" layoutY="386.0" mnemonicParsing="false" onAction="#update" prefHeight="24.0" prefWidth="101.0" style="-fx-background-color: #23c333;" text="به روزرسانی" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="452.0" AnchorPane.topAnchor="386.0" />
+      <Button layoutX="77.0" layoutY="386.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #23c333;" text="حذف" AnchorPane.rightAnchor="600.0" AnchorPane.topAnchor="386.0" />
+   </children>
+</AnchorPane>

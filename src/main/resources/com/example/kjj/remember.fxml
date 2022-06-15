@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root id="AnchorPane" prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;" type="AnchorPane"
+         xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="com.example.kjj.controller.RememberController">
+   <AnchorPane layoutY="1.0" prefHeight="92.0" prefWidth="746.0" style="-fx-background-color: #2f3650;">
+      <children>
+         <Label layoutX="335.0" layoutY="28.0" text="یاد اوری" textFill="#71788a"
+                AnchorPane.rightAnchor="334.59999999999997" AnchorPane.topAnchor="28.0">
+            <font>
+               <Font size="24.0"/>
+            </font>
+         </Label>
+         <Label layoutX="580.0" layoutY="28.0" text="صادرات واردات" textFill="#71788a"
+                AnchorPane.rightAnchor="15.199999999999932" AnchorPane.topAnchor="28.0">
+            <font>
+               <Font size="24.0"/>
+            </font>
+         </Label>
+         <Circle fx:id="red" fill="#fe4571" layoutX="39.0" layoutY="46.0" radius="7.0" stroke="BLACK"
+                 strokeType="INSIDE" strokeWidth="0.0"/>
+         <Circle fx:id="yellow" fill="#fec864" layoutX="60.0" layoutY="46.0" radius="7.0" stroke="BLACK"
+                 strokeType="INSIDE" strokeWidth="0.0"/>
+         <Circle fx:id="green" fill="#42ce9d" layoutX="81.0" layoutY="46.0" radius="7.0" stroke="BLACK"
+                 strokeType="INSIDE" strokeWidth="0.0"/>
+      </children>
+   </AnchorPane>
+   <Label layoutX="649.0" layoutY="172.0" text="ایمیل" textFill="#71788a" AnchorPane.rightAnchor="70.0"
+          AnchorPane.topAnchor="172.0"/>
+   <Label fx:id="box" layoutX="598.0" layoutY="324.0" text="number in box" textFill="#71788a"
+          AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="222.0"/>
+   <TextField fx:id="email" layoutX="342.0" layoutY="168.0" promptText="email" style="-fx-background-color: #2f3650;"
+              AnchorPane.rightAnchor="255.0"/>
+   <TextField fx:id="numberInBox" layoutX="342.0" layoutY="320.0" promptText="number in box"
+              style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="255.0" AnchorPane.topAnchor="222.0"/>
+   <TextField fx:id="number" layoutX="355.0" layoutY="333.0" promptText="number" style="-fx-background-color: #2f3650;"
+              AnchorPane.rightAnchor="255.0" AnchorPane.topAnchor="333.0"/>
+   <Label layoutX="611.0" layoutY="337.0" text="عدد ارسال شده" textFill="#71788a" AnchorPane.rightAnchor="70.0"
+          AnchorPane.topAnchor="333.0"/>
+   <Button layoutX="504.0" layoutY="289.0" mnemonicParsing="false" onAction="#forward"
+           style="-fx-background-color: #23c333;" text="ارسال کد"/>
+   <Button layoutX="-1.0" layoutY="426.0" mnemonicParsing="false" onAction="#login" prefHeight="66.0" prefWidth="746.0"
+           style="-fx-background-color: #23c333;" text="ورود"/>
+</fx:root>

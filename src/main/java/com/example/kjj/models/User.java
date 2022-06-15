@@ -42,11 +42,11 @@ public class User {
         @Size(max = 120)
         @Getter @Setter
         @Column(nullable = false)
-        private String username;
+        public String username;
     
         @Size(max = 120)
         @Getter @Setter
-        private String password;
+        public String password;
 
         @Getter @Setter
         @OneToMany
