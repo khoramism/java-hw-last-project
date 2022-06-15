@@ -63,5 +63,4 @@ public class SingingController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         // TODO
     }
-
 }

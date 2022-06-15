@@ -18,16 +18,12 @@
           AnchorPane.topAnchor="150.0"/>
    <Label layoutX="592.0" layoutY="254.0" prefHeight="0.0" prefWidth="27.0" text="ایمیل" textFill="#71788a"
           AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="250.0"/>
-   <Label layoutX="564.0" layoutY="208.0" text="شماره تماس" textFill="#71788a" AnchorPane.rightAnchor="120.0"
-          AnchorPane.topAnchor="200.0"/>
    <TextField fx:id="name" alignment="CENTER" layoutX="353.0" layoutY="84.0" promptText="name"
               style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="100.0"/>
    <TextField fx:id="familyname" alignment="CENTER" layoutX="353.0" layoutY="121.0" promptText="family "
               style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="150.0"/>
    <TextField fx:id="email" alignment="CENTER" layoutX="347.0" layoutY="241.0" promptText="email"
               style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="250.0"/>
-   <TextField fx:id="phone" alignment="CENTER" layoutX="341.0" layoutY="204.0" promptText="phone "
-              style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="200.0"/>
    <Button layoutY="417.0" mnemonicParsing="false" onAction="#login" prefHeight="77.0" prefWidth="746.0"
            style="-fx-background-color: #23c333;" text="ورود"/>
    <AnchorPane layoutX="-3.0" layoutY="2.0" prefHeight="66.0" prefWidth="746.0" style="-fx-background-color: #2f3650;"

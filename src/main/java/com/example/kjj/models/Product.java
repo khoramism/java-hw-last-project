@@ -1,5 +1,6 @@
 package com.example.kjj.models;
 
+import com.example.kjj.enums.Status;
 import lombok.Getter;
 import lombok.Setter;
 

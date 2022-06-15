@@ -1,4 +1,4 @@
-package com.example.kjj.models;
+package com.example.kjj.enums;
 
 public enum Status {
     EXPORTED,

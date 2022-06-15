@@ -17,5 +17,7 @@ module com.example.kjj {
 
     opens com.example.kjj.models to org.hibernate.orm.core;
     exports com.example.kjj.models;
+    exports com.example.kjj.enums;
+    opens com.example.kjj.enums to org.hibernate.orm.core;
 
 }
