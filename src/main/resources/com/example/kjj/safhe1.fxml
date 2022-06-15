@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<fx:root id="AnchorPane" prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;" type="AnchorPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kjj.controller.safhe1Controller">
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kjj.controller.safhe1Controller">
    <AnchorPane prefHeight="75.0" prefWidth="746.0" style="-fx-background-color: #2f3650;">
       <Label layoutX="562.0" layoutY="19.0" prefHeight="42.0" prefWidth="170.0" text="صادرات و واردات" textFill="#71788a" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="19.0">
          <font>
@@ -34,4 +34,4 @@
       <Button layoutX="1.0" layoutY="-1.0" mnemonicParsing="false" onAction="#login" prefHeight="96.0" prefWidth="746.0" style="-fx-background-color: #23c333;" text="ورود" />
    </AnchorPane>
    <Button layoutX="169.0" layoutY="363.0" mnemonicParsing="false" onAction="#register" prefHeight="42.0" prefWidth="456.0" style="-fx-background-color: #2f3650;" text="ثبت نام" textFill="#71788a" />
-</fx:root>
+</AnchorPane>

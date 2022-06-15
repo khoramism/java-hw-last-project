@@ -55,7 +55,7 @@ public class UserDaoMySQL {
     public List<User> find(User user) throws SQLException {
         ss = HibernateUtil.getSessionFactory().openSession();
         tx = ss.beginTransaction();
-        Query q = ss.createQuery("From User");
+        Query q = ss.createQuery("From User ");
         List<User> all = q.list();
         all = all.stream().filter(s->
             ((user.getId() == null || user.getId().equals(s.getId()))

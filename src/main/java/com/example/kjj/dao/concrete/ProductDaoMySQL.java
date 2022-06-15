@@ -215,7 +215,7 @@ public class ProductDaoMySQL {
 	public List<Product> find(Product product) throws SQLException {
 		ss = HibernateUtil.getSessionFactory().openSession();
 		tx = ss.beginTransaction();
-		Query q = ss.createQuery("From User");
+		Query q = ss.createQuery("From Product");
 		List<Product> all = q.list();
 		all = all.stream().filter(s->
 				(( product.getId() == null || product.getId().equals(s.getId()))

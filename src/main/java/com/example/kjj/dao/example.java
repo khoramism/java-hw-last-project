@@ -8,6 +8,7 @@ import com.example.kjj.models.Sader;
 import com.example.kjj.models.User;
 
 import java.sql.SQLException;
+import java.util.List;
 
 public class example {
     public static void main(String[] args) throws SQLException {
@@ -25,10 +26,20 @@ public class example {
 //        saderDaoMySQL.insert(sader);
 //        user.getSaders().add(sader);
 //        userDaoMySQL.update(user);
-        Product product = new Product("csc Product", "this was a Desciptions", 1000, true,true);
-        productDaoMySQL.update(product);
+        Product product = new Product("Very COol Poruct here ", "THis is a very BadASs description", 10000, true,true);
+        Product product1 = new Product("Aweosme Product", "THis is a very Awesome descript", 122000, true,true);
+        Product product2 = new Product("Great product BRO", "THis is a very Great des", 14354, true,true);
+        Product product3 = new Product("Very COol Pruct here ", "Could i be any cooler of a product", 544654, true,true);
+        productDaoMySQL.insert(product);
+        productDaoMySQL.insert(product1);
+        productDaoMySQL.insert(product2);
+        productDaoMySQL.insert(product3);
+        List<Product> reza =  productDaoMySQL.all();
+        for (int i = 0; i < reza.size(); i++) {
 
-//
+            // Print all elements of List
+            System.out.println(reza.get(i));
+        }
 
         /*
         User user  = new User();

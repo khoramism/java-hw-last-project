@@ -9,42 +9,57 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<fx:root id="AnchorPane" prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;" type="AnchorPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alireza.SingingController">
-   <children>
-      <Label layoutX="611.0" layoutY="88.0" text="اسم" textFill="#71788a" AnchorPane.bottomAnchor="390.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="100.0" />
-      <Label layoutX="580.0" layoutY="125.0" text="نام خانوادگی" textFill="#71788a" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="150.0" />
-      <Label layoutX="592.0" layoutY="254.0" prefHeight="0.0" prefWidth="27.0" text="ایمیل" textFill="#71788a" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="250.0" />
-      <Label layoutX="564.0" layoutY="208.0" text="شماره تماس" textFill="#71788a" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="200.0" />
-      <TextField fx:id="name" alignment="CENTER" layoutX="353.0" layoutY="84.0" promptText="name" style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="100.0" />
-      <TextField fx:id="familyname" alignment="CENTER" layoutX="353.0" layoutY="121.0" promptText="family " style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="150.0" />
-      <TextField fx:id="email" alignment="CENTER" layoutX="347.0" layoutY="241.0" promptText="email" style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="250.0" />
-      <TextField fx:id="phone" alignment="CENTER" layoutX="341.0" layoutY="204.0" promptText="phone " style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="200.0" />
-      <Button layoutY="417.0" mnemonicParsing="false" onAction="#login" prefHeight="77.0" prefWidth="746.0" style="-fx-background-color: #23c333;" text="ورود" />
-      <AnchorPane layoutX="-3.0" layoutY="2.0" prefHeight="66.0" prefWidth="746.0" style="-fx-background-color: #2f3650;" AnchorPane.bottomAnchor="426.0" AnchorPane.topAnchor="2.0">
-         <children>
-            <Label alignment="CENTER" layoutX="314.0" layoutY="19.0" prefHeight="42.0" prefWidth="118.0" text="ثبت نام" textFill="#71788a" AnchorPane.rightAnchor="314.0" AnchorPane.topAnchor="19.0">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Label>
-            <Label layoutX="580.0" layoutY="15.0" prefHeight="42.0" prefWidth="151.0" text="صادرات واردات" textFill="#71788a" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
-               <font>
-                  <Font size="24.0" />
-               </font>
-            </Label>
-            <Circle fx:id="red" fill="#fe4571" layoutX="34.0" layoutY="37.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-            <Circle fx:id="yellow" fill="#fec864" layoutX="54.0" layoutY="37.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-            <Circle fx:id="green" fill="#42ce9d" layoutX="74.0" layoutY="37.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
-         </children>
-      </AnchorPane>
-      <ImageView fitHeight="111.0" fitWidth="202.0" layoutX="41.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../../Downloads/download.png" />
-         </image>
-      </ImageView>
-      <Label layoutX="577.0" layoutY="295.0" text="نام کاربری" textFill="#71788a" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="300.0" />
-      <TextField fx:id="userName" alignment="CENTER" layoutX="347.0" layoutY="291.0" promptText="user name" style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="300.0" />
-      <Label layoutX="556.0" layoutY="347.0" text="رمز عبور" textFill="#71788a" />
-      <TextField fx:id="userName1" alignment="CENTER" layoutX="325.0" layoutY="351.0" promptText="password" style="-fx-background-color: #2f3650;" />
-   </children>
-</fx:root>
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;"
+            xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.kjj.controller.SingingController">
+   <Label layoutX="611.0" layoutY="88.0" text="اسم" textFill="#71788a" AnchorPane.bottomAnchor="390.0"
+          AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="100.0"/>
+   <Label layoutX="580.0" layoutY="125.0" text="نام خانوادگی" textFill="#71788a" AnchorPane.rightAnchor="120.0"
+          AnchorPane.topAnchor="150.0"/>
+   <Label layoutX="592.0" layoutY="254.0" prefHeight="0.0" prefWidth="27.0" text="ایمیل" textFill="#71788a"
+          AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="250.0"/>
+   <Label layoutX="564.0" layoutY="208.0" text="شماره تماس" textFill="#71788a" AnchorPane.rightAnchor="120.0"
+          AnchorPane.topAnchor="200.0"/>
+   <TextField fx:id="name" alignment="CENTER" layoutX="353.0" layoutY="84.0" promptText="name"
+              style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="100.0"/>
+   <TextField fx:id="familyname" alignment="CENTER" layoutX="353.0" layoutY="121.0" promptText="family "
+              style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="150.0"/>
+   <TextField fx:id="email" alignment="CENTER" layoutX="347.0" layoutY="241.0" promptText="email"
+              style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="250.0"/>
+   <TextField fx:id="phone" alignment="CENTER" layoutX="341.0" layoutY="204.0" promptText="phone "
+              style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="200.0"/>
+   <Button layoutY="417.0" mnemonicParsing="false" onAction="#login" prefHeight="77.0" prefWidth="746.0"
+           style="-fx-background-color: #23c333;" text="ورود"/>
+   <AnchorPane layoutX="-3.0" layoutY="2.0" prefHeight="66.0" prefWidth="746.0" style="-fx-background-color: #2f3650;"
+               AnchorPane.bottomAnchor="426.0" AnchorPane.topAnchor="2.0">
+      <Label alignment="CENTER" layoutX="314.0" layoutY="19.0" prefHeight="42.0" prefWidth="118.0" text="ثبت نام"
+             textFill="#71788a" AnchorPane.rightAnchor="314.0" AnchorPane.topAnchor="19.0">
+         <font>
+            <Font size="24.0"/>
+         </font>
+      </Label>
+      <Label layoutX="580.0" layoutY="15.0" prefHeight="42.0" prefWidth="151.0" text="صادرات واردات"
+             textFill="#71788a" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+         <font>
+            <Font size="24.0"/>
+         </font>
+      </Label>
+      <Circle fx:id="red" fill="#fe4571" layoutX="34.0" layoutY="37.0" radius="7.0" stroke="BLACK"
+              strokeType="INSIDE" strokeWidth="0.0"/>
+      <Circle fx:id="yellow" fill="#fec864" layoutX="54.0" layoutY="37.0" radius="7.0" stroke="BLACK"
+              strokeType="INSIDE" strokeWidth="0.0"/>
+      <Circle fx:id="green" fill="#42ce9d" layoutX="74.0" layoutY="37.0" radius="7.0" stroke="BLACK"
+              strokeType="INSIDE" strokeWidth="0.0"/>
+   </AnchorPane>
+   <ImageView fitHeight="111.0" fitWidth="202.0" layoutX="41.0" layoutY="105.0" pickOnBounds="true"
+              preserveRatio="true">
+      <Image url="@../../../../../Downloads/mamad.jpg"/>
+   </ImageView>
+   <Label layoutX="577.0" layoutY="295.0" text="نام کاربری" textFill="#71788a" AnchorPane.rightAnchor="120.0"
+          AnchorPane.topAnchor="300.0"/>
+   <TextField fx:id="userName" alignment="CENTER" layoutX="347.0" layoutY="291.0" promptText="user name"
+              style="-fx-background-color: #2f3650;" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="300.0"/>
+   <Label layoutX="556.0" layoutY="347.0" text="رمز عبور" textFill="#71788a"/>
+   <TextField fx:id="password" alignment="CENTER" layoutX="325.0" layoutY="351.0" promptText="password"
+              style="-fx-background-color: #2f3650;"/>
+</AnchorPane>

@@ -25,7 +25,8 @@ import java.util.ResourceBundle;
  */
 public class SingingController implements Initializable {
 
-     @FXML
+    public TextField userName;
+    @FXML
      TextField email;
 
     @FXML
@@ -36,9 +37,6 @@ public class SingingController implements Initializable {
 
     @FXML
      TextField name;
-
-    @FXML
-     TextField numberInBox;
 
     @FXML
     private TextField password;
@@ -56,7 +54,7 @@ public class SingingController implements Initializable {
                 name.getText(),
                 familyname.getText(),
                 email.getText(),
-                email.getText(),
+                userName.getText(),
                 password.getText()
         ));
         ScreenService.getInstance().setView("main");
