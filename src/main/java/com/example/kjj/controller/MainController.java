@@ -6,6 +6,7 @@ package com.example.kjj.controller;
 import com.example.kjj.models.Product;
 import com.example.kjj.dao.concrete.ProductDaoMySQL;
 import com.example.kjj.dao.concrete.VaredDaoMySQL;
+import com.example.kjj.service.ScreenService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -13,6 +14,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.shape.Circle;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.List;
@@ -77,8 +79,8 @@ public class MainController implements Initializable {
 
 
     @FXML
-    void us(ActionEvent event) {
-
+    void us(ActionEvent event) throws IOException {
+        ScreenService.getInstance().setView("us");
     }
 
 
@@ -100,12 +102,14 @@ public class MainController implements Initializable {
         price3.setText("544654");
     }
 
-    public void search(ActionEvent actionEvent) throws SQLException {
+    public void search(ActionEvent actionEvent) throws SQLException, IOException {
         ProductDaoMySQL productDaoMySQL = new ProductDaoMySQL();
         Product product = new Product();
         product.setDescription(query.getText());
         product.setTitle(query.getText());
         // product.setPrice(query.getText());
         List<Product> searched_products = productDaoMySQL.find(product);
+
+        ScreenService.getInstance().setView("detail");
     }
 }

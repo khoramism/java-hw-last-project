@@ -228,4 +228,22 @@ public class ProductDaoMySQL {
 		tx.commit();
 		return all;
 	}
+
+	public List<Product> findById(Product product) throws SQLException {
+		ss = HibernateUtil.getSessionFactory().openSession();
+		tx = ss.beginTransaction();
+		Query q = ss.createQuery("From Product");
+		List<Product> all = q.list();
+		all = all.stream().filter(s->
+				(( product.getId() == null || product.getId().equals(s.getId()))
+						&& (product.getTitle() == null || product.getTitle().equals(s.getTitle()))
+						&& ( product.getDescription() == null || product.getDescription().equals(s.getDescription()))
+						&& (product.getIsAllowed() == null || product.getIsAllowed().equals(s.getIsAllowed()))
+						&& ( product.getPrice() == null || product.getPrice().equals(s.getPrice()))
+						&& ( product.getStatus() == null || product.getStatus().equals(s.getStatus())))
+		).collect(Collectors.toList());
+		tx.commit();
+		return all;
+	}
+
 }

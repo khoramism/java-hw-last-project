@@ -9,6 +9,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.shape.Circle;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -20,7 +21,11 @@ import java.util.ResourceBundle;
  */
 public class RememberController implements Initializable {
 
-   
+
+    public Circle green;
+    public Circle yellow;
+    public Circle red;
+    public TextField number;
     @FXML
     TextField email;
 

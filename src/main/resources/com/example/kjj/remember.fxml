@@ -7,8 +7,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<fx:root id="AnchorPane" prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;" type="AnchorPane"
-         xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;"  xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
          fx:controller="com.example.kjj.controller.RememberController">
    <AnchorPane layoutY="1.0" prefHeight="92.0" prefWidth="746.0" style="-fx-background-color: #2f3650;">
       <children>
@@ -48,4 +47,4 @@
            style="-fx-background-color: #23c333;" text="ارسال کد"/>
    <Button layoutX="-1.0" layoutY="426.0" mnemonicParsing="false" onAction="#login" prefHeight="66.0" prefWidth="746.0"
            style="-fx-background-color: #23c333;" text="ورود"/>
-</fx:root>
+</AnchorPane>

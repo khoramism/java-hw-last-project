@@ -42,8 +42,8 @@ import java.util.ResourceBundle;
         void login(ActionEvent event) throws SQLException {
 
             User user = new User();
-            user.setUsername(pass.getText());
-            user.setPassword(username.getText());
+            user.setUsername(username.getText());
+            user.setPassword(pass.getText());
             UserDaoMySQL userDaoMySQL = new UserDaoMySQL();
 
             user = userDaoMySQL.find(user).stream().findFirst().orElse(null);

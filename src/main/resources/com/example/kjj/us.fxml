@@ -6,7 +6,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<fx:root id="AnchorPane" prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;" type="AnchorPane" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="alireza.UsController">
+<AnchorPane id="AnchorPane" prefHeight="493.0" prefWidth="746.0" style="-fx-background-color: #2c344b;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kjj.controller.UsController">
    <children>
       <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="87.0" prefWidth="775.0" style="-fx-background-color: #2f3650;">
          <children>
@@ -47,4 +47,4 @@
       <Label fx:id="aliJ" layoutX="521.0" layoutY="269.0" text="product panel" textFill="WHITE" />
       <Button layoutX="-2.0" layoutY="412.0" mnemonicParsing="false" onAction="#mainPage" prefHeight="79.0" prefWidth="775.0" style="-fx-background-color: #23c333;" text="main page" />
    </children>
-</fx:root>
+</AnchorPane>

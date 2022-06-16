@@ -26,17 +26,17 @@
    <Label layoutX="615.0" layoutY="434.0" text="کدام قسمت؟" textFill="#71788a" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="434.0" />
    <Button layoutX="14.0" layoutY="450.0" mnemonicParsing="false" onAction="#us" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #23c333;" text="درباره ی ما" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="658.0" AnchorPane.topAnchor="450.0" />
    <Button layoutX="202.0" layoutY="105.0" mnemonicParsing="false" onAction="#search" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #23c333;" text="جستجو" />
-   <TextField id="query" alignment="CENTER" layoutX="21.0" layoutY="106.0" promptText="جستجو" style="-fx-background-color: #2f3650;" />
-   <Label id="id" layoutX="625.0" layoutY="165.0" textFill="#71788a" />
-   <Label id="title" layoutX="417.0" layoutY="165.0" prefHeight="16.0" prefWidth="124.0"  textFill="#71788a" />
-   <Label id="price" layoutX="89.0" layoutY="165.0" prefHeight="16.0" prefWidth="124.0" textFill="#71788a" />
-   <Label id="id1" layoutX="650.0" layoutY="180.0" text = "asc" textFill="#71788a" />
-   <Label id="title1" layoutX="417.0" layoutY="180.0" prefHeight="16.0" prefWidth="124.0"  textFill="#71788a" />
-   <Label id="price1" layoutX="89.0" layoutY="180.0" prefHeight="16.0" prefWidth="124.0" textFill="#71788a" />
-   <Label id="id2" layoutX="625.0" layoutY="195.0" textFill="#71788a" />
-   <Label id="title2" layoutX="417.0" layoutY="195.0" prefHeight="16.0" prefWidth="124.0"  textFill="#71788a" />
-   <Label id="price2" layoutX="89.0" layoutY="195.0" prefHeight="16.0" prefWidth="124.0" textFill="#71788a" />
-   <Label id="id3" layoutX="625.0" layoutY="210.0" textFill="#71788a" />
-   <Label id="title3" layoutX="417.0" layoutY="210.0" prefHeight="16.0" prefWidth="124.0"  textFill="#71788a" />
-   <Label id="price3" layoutX="89.0" layoutY="210.0" prefHeight="16.0" prefWidth="124.0" textFill="#71788a" />
+   <TextField fx:id="query" alignment="CENTER" layoutX="21.0" layoutY="106.0" promptText="جستجو" style="-fx-background-color: #2f3650;" />
+   <Label fx:id="id" layoutX="625.0" layoutY="165.0" textFill="#71788a" />
+   <Label fx:id="title" layoutX="417.0" layoutY="165.0" prefHeight="16.0" prefWidth="124.0"  textFill="#71788a" />
+   <Label fx:id="price" layoutX="89.0" layoutY="165.0" prefHeight="16.0" prefWidth="124.0" textFill="#71788a" />
+   <Label fx:id="id1" layoutX="650.0" layoutY="180.0" text = "asc" textFill="#71788a" />
+   <Label fx:id="title1" layoutX="417.0" layoutY="180.0" prefHeight="16.0" prefWidth="124.0"  textFill="#71788a" />
+   <Label fx:id="price1" layoutX="89.0" layoutY="180.0" prefHeight="16.0" prefWidth="124.0" textFill="#71788a" />
+   <Label fx:id="id2" layoutX="625.0" layoutY="195.0" textFill="#71788a" />
+   <Label fx:id="title2" layoutX="417.0" layoutY="195.0" prefHeight="16.0" prefWidth="124.0"  textFill="#71788a" />
+   <Label fx:id="price2" layoutX="89.0" layoutY="195.0" prefHeight="16.0" prefWidth="124.0" textFill="#71788a" />
+   <Label fx:id="id3" layoutX="625.0" layoutY="210.0" textFill="#71788a" />
+   <Label fx:id="title3" layoutX="417.0" layoutY="210.0" prefHeight="16.0" prefWidth="124.0"  textFill="#71788a" />
+   <Label fx:id="price3" layoutX="89.0" layoutY="210.0" prefHeight="16.0" prefWidth="124.0" textFill="#71788a" />
 </AnchorPane>

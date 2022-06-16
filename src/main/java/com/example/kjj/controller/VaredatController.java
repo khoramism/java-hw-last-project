@@ -1,6 +1,7 @@
 package com.example.kjj.controller;
 
 
+import com.example.kjj.service.ScreenService;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -8,6 +9,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+
+import java.io.IOException;
 
 public class VaredatController {
 
@@ -39,6 +42,7 @@ public class VaredatController {
 
     }
 
-    public void pressObjSabtBtn(ActionEvent actionEvent) {
+    public void pressObjSabtBtn(ActionEvent actionEvent) throws IOException {
+        ScreenService.getInstance().setView("detail");
     }
 }

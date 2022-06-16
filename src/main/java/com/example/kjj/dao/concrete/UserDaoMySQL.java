@@ -57,11 +57,12 @@ public class UserDaoMySQL {
         tx = ss.beginTransaction();
         Query q = ss.createQuery("From User ");
         List<User> all = q.list();
-        all = all.stream().filter(s->
-            ((user.getId() == null || user.getId().equals(s.getId()))
-                    && ( user.getUsername() == null || user.getUsername().equals(s.getUsername()))
-                    && (user.getEmail() == null || user.getEmail().equals(s.getEmail()))
-                    && (user.getPassword() == null || user.getPassword().equals(s.getPassword())))
+        all = all.stream().filter(s-> {
+            return ((user.getId() == null || user.getId().equals(s.getId()))
+                            && (user.getUsername() == null || user.getUsername().equals(s.getUsername()))
+                            && (user.getEmail() == null || user.getEmail().equals(s.getEmail()))
+                            && (user.getPassword() == null || user.getPassword().equals(s.getPassword())));
+                }
         ).collect(Collectors.toList());
         tx.commit();
         return all;
