@@ -53,7 +53,7 @@ The import system has the following services :
 - MySQL Database 
 - Docker Compose File for the DB. 
 - Using Enums 
-## Contributions on the whole FrontEnd was done by Ali Ajvand , [Dara Sadri](http://github.com/dara100ry/) and [Milad Taghizade](github.com/miladtaghizadeh1382/) 
+## Contributions on the whole FrontEnd was done by Ali Ajvand , [Dara Sadri](http://github.com/dara100ry/) and [Milad Taghizade](https://github.com/miladtaghizadeh1382/) 
 ### FrontEnd 
 - JavaFx
 - Css Configuration For FXML files.
