@@ -43,7 +43,20 @@ The import system has the following services :
 - Product bill of lading
 - Determining the financial value of products
 
-
+## Technologies used in this project
+## Contributions on the whole Backend was done by [Alireza Khorami](https://github.com/khoramism) 
+### Backend 
+- Hibernate 
+- Error Handeling (Exception)
+- Cookie 
+- OOP 
+- MySQL Database 
+- Docker Compose File for the DB. 
+- Using Enums 
+## Contributions on the whole Backend was done by Ali Ajvand , [Dara Sadri](http://github.com/dara100ry/) and [Milad Taghizade](github.com/miladtaghizadeh1382/) 
+### FrontEnd 
+- JavaFx
+- Css Configuration For FXML files.
 
 
 
