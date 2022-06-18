@@ -44,7 +44,11 @@ The import system has the following services :
 - Determining the financial value of products
 
 
+
+
+
 ### the team includes
+![Contributions on the project](https://github.com/khoramism/java-hw-last-project/blob/master/src/Downloads/chart-contribution.png)
 #### [Alireza Khorami](https://github.com/khoramism)
 #### [Dara Sadarai](https://github.com/dara100ry/)
 #### [Milad Taghizade](https://github.com/miladtaghizadeh1382/)
